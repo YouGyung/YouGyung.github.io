@@ -10,8 +10,11 @@
   --maxWidth-2xl: 42rem;
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
+  --maxWidth-5xl: 75rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --image-width: 20rem;
+  --image-height: 13rem;
+  --maxWidth-wrapper: var(--maxWidth-5xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -52,12 +55,11 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #3b82f6;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
   --color-accent: #d1dce5;
+  --color-line: #e5e7eb;
 }
 
 /* HTML elements */
@@ -82,7 +84,11 @@ body {
 }
 
 footer {
-  padding: var(--spacing-6) var(--spacing-0);
+  margin-top: var(--spacing-32);
+  font-size: var(--fontSize-1);
+  display: absolute;
+  bottom: 0;
+  color: var(--color-text-light);
 }
 
 hr {
@@ -227,13 +233,10 @@ table thead tr th {
 
 /* Link */
 
-a {
-  color: var(--color-primary);
-}
-
 a:hover,
 a:focus {
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 /* Custom classes */
@@ -241,7 +244,8 @@ a:focus {
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
+  padding: var(--spacing-5);
+  padding-top: var(--spacing-10);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -258,19 +262,43 @@ a:focus {
 }
 
 .post-list-item {
-  margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
+  border-bottom: 1px solid var(--color-line);
+  padding: var(--spacing-8) 0;
+  display: flex;
 }
 
 .post-list-item p {
   margin-bottom: var(--spacing-0);
+  color: var(--color-text);
+}
+
+.post-list-item small {
+  margin-bottom: var(--spacing-0);
+  color: var(--color-text);
 }
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
+}
+
+.post-list-item:hover {
+  color: var(--color-primary);
+}
+
+.post-list-item__image {
+  width: var(--image-width);
+  height: var(--image-height);
+}
+
+.post-list-item__image img {
+  width: var(--image-width);
+  height: var(--image-height);
+}
+
+.post-list-item:hover img {
+  transform: scale(1.1);
 }
 
 .post-list-item header {
