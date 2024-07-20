@@ -24,8 +24,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      {/* <Bio /> */}
-      <ol style={{ listStyle: `none` }}>
+      <ol style={{ listStyle: `none` }} className="claymorphism main-page">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -39,9 +38,9 @@ const BlogIndex = ({ data, location }) => {
                 <div className="post-list-item__image">
                   <StaticImage
                     layout="fixed"
-                    src="https://github.com/user-attachments/assets/f4dd44ae-6e70-4583-9547-78a6034977b8"
-                    width={278}
-                    height={127}
+                    src="https://github.com/user-attachments/assets/2a95cdcf-2f98-4d6f-be6c-2e6091de4505"
+                    width={404}
+                    height={208}
                     alt="Profile picture"
                   />
                 </div>

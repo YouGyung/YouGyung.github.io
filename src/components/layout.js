@@ -24,7 +24,7 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
+      <footer className="claymorphism">
         Copyright © yougyung All rights reserved. 2024 | built with{" "}
         <a href="https://www.gatsbyjs.com">Gatsby</a> | Developed by{" "}
         <a href="https://github.com/yougyung">yougyung</a>
