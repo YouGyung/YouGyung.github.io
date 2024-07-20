@@ -25,9 +25,9 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        Copyright © yougyung All rights reserved. 2024 | built with{" "}
+        <a href="https://www.gatsbyjs.com">Gatsby</a> | Developed by{" "}
+        <a href="https://github.com/yougyung">yougyung</a>
       </footer>
     </div>
   )
