@@ -24,10 +24,6 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <div style={{ textAlign: "center" }}>
-        <h1>Essay</h1>
-        <p>의견이나 느낀 점, 회고에 대한 기록</p>
-      </div>
       <ol style={{ listStyle: `none` }} className="claymorphism post-list">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug

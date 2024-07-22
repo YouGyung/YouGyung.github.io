@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -20,27 +21,36 @@ const BlogPostTemplate = ({
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          {/* <p>{post.frontmatter.date}</p> */}
           <Bio />
         </header>
-
+        {/* <StaticImage
+          layout="fixed"
+          src="https://github.com/user-attachments/assets/2a95cdcf-2f98-4d6f-be6c-2e6091de4505"
+          width={1000}
+          height={508}
+          alt="Profile picture"
+        /> */}
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
         <hr />
-        <footer>
-          <Bio />
-        </footer>
       </article>
-      <nav className="blog-post-nav">
+      <nav
+        className="blog-post-nav claymorphism"
+        style={{
+          maxWidth: "1000px",
+          margin: "50px auto",
+          padding: "50px",
+        }}
+      >
         <ul
           style={{
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
           }}
         >
           <li>
