@@ -147,10 +147,18 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 
-img {
+section img {
   border-style: none;
-}
+  width: 90%;
+  margin: 0 5%;
 
+  /* glassmorphism */
+  background: rgba(222, 238, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+}
 .post-list-item__image {
   background: rgba(255, 255, 255, 0.25);
 }

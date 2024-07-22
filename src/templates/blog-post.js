@@ -1,16 +1,21 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
+
+  const handleClickIcon = () => {
+    let nowUrl = window.location.href
+    navigator.clipboard.writeText(nowUrl).then(res => {
+      alert("복사되었어요")
+    })
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -21,16 +26,15 @@ const BlogPostTemplate = ({
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          {/* <p>{post.frontmatter.date}</p> */}
-          <Bio />
+          <div className="blog-post-info ">
+            <p>{post.frontmatter.date}</p>
+            <div class="icon" onClick={handleClickIcon}>
+              <StaticImage src="./clip.svg" width={24} height={24} />
+              <span>URL Ctrl+C</span>
+            </div>
+          </div>
         </header>
-        {/* <StaticImage
-          layout="fixed"
-          src="https://github.com/user-attachments/assets/2a95cdcf-2f98-4d6f-be6c-2e6091de4505"
-          width={1000}
-          height={508}
-          alt="Profile picture"
-        /> */}
+
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"

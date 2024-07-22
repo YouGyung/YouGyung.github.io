@@ -45,7 +45,6 @@
   height: var(--image-height);
   border-radius: var(--spacing-8);
   overflow: hidden;
-  box-shadow: 0px 14px 18px 14px rgba(223, 238, 250, 0.5);
 }
 
 .post-list-item__image img {

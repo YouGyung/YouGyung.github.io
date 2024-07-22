@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <div className="post-list-item__image">
+                <div className="post-list-item__image glassmorphism">
                   <StaticImage
                     layout="fixed"
                     src="https://github.com/user-attachments/assets/2a95cdcf-2f98-4d6f-be6c-2e6091de4505"
