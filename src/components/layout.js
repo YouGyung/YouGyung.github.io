@@ -14,7 +14,7 @@ const Layout = ({ location, title, children }) => {
           <Link to="/" style={{ color: "var(--color-primary)" }}>
             Tech
           </Link>
-          <Link to="/essay">Essay</Link>
+          <Link to="/about">About</Link>
         </div>
       </>
     )

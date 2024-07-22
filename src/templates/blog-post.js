@@ -37,32 +37,22 @@ const BlogPostTemplate = ({
         />
         <hr />
       </article>
-      <nav
-        className="blog-post-nav claymorphism"
-        style={{
-          maxWidth: "1000px",
-          margin: "50px auto",
-          padding: "50px",
-        }}
-      >
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-          }}
-        >
-          <li>
+      <nav className="blog-post-nav">
+        <ul>
+          <li className="">
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link
+                className="claymorphism"
+                to={previous.fields.slug}
+                rel="prev"
+              >
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link className="claymorphism" to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
