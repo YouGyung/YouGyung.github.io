@@ -315,45 +315,6 @@ a:focus {
   border-radius: 100%;
 }
 
-.blog-post {
-  max-width: var(--post-width);
-  padding: 0 var(--layout-width-padding);
-  overflow: hidden;
-  margin: 0 auto;
-  font-size: var(--fontSize-2);
-}
-
-.blog-post-info {
-  display: flex;
-  justify-content: space-between;
-  color: var(--color-subText);
-}
-
-.blog-post img {
-  max-width: var(--post-width);
-}
-
-.blog-post-nav ul {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  list-style: none;
-}
-
-.blog-post-nav li {
-  padding: 0 var(--layout-width-padding);
-  max-width: var(--post-width);
-  margin: var(--spacing-8) auto;
-  line-height: var(--fontSize-7);
-}
-
-.blog-post-nav a {
-  padding: var(--spacing-4);
-  color: var(--color-primary);
-  text-decoration: none;
-  width: max-content;
-}
-
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }

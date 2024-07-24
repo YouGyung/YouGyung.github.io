@@ -1,9 +1,10 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { Post, Nav, Info } from "./blog-post.style.js"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -20,25 +21,24 @@ const BlogPostTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle}>
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
+      <Post itemScope itemType="http://schema.org/Article">
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <div className="blog-post-info ">
+          <Info>
             <p>{post.frontmatter.date}</p>
-            <div class="icon" onClick={handleClickIcon}>
-              <StaticImage src="./clip.svg" width={24} height={24} />
+            <div className="icon" onClick={handleClickIcon}>
+              <StaticImage
+                src="./clip.svg"
+                width={24}
+                height={24}
+                alt={"URL Ctrl+C Icon"}
+              />
               <span>URL Ctrl+C</span>
             </div>
-          </div>
+          </Info>
         </header>
         <GatsbyImage
           image={post.frontmatter.image.childImageSharp.gatsbyImageData}
-          width={404}
-          height={208}
           alt="Profile picture"
           className="glassmorphism"
         />
@@ -47,8 +47,8 @@ const BlogPostTemplate = ({
           itemProp="articleBody"
         />
         <hr />
-      </article>
-      <nav className="blog-post-nav">
+      </Post>
+      <Nav>
         <ul>
           <li className="">
             {previous && (
@@ -69,7 +69,7 @@ const BlogPostTemplate = ({
             )}
           </li>
         </ul>
-      </nav>
+      </Nav>
     </Layout>
   )
 }
@@ -82,7 +82,6 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     />
   )
 }
-
 export default BlogPostTemplate
 
 export const pageQuery = graphql`

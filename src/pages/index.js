@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { PostList } from "./index.style"
+import { PostList, PostListItem, Content, Image } from "./index.style"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -25,21 +25,14 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <PostList
-        style={{ listStyle: `none` }}
-        className="claymorphism post-list"
-      >
+      <PostList className="claymorphism">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
             <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <div className="post-list-item__image glassmorphism">
+              <PostListItem itemScope itemType="http://schema.org/Article">
+                <Image className="glassmorphism">
                   <GatsbyImage
                     image={
                       post.frontmatter.image.childImageSharp.gatsbyImageData
@@ -48,8 +41,8 @@ const BlogIndex = ({ data, location }) => {
                     height={208}
                     alt="Profile picture"
                   />
-                </div>
-                <div className="post-list-item__content">
+                </Image>
+                <Content>
                   <header>
                     <small>{post.frontmatter.date}</small>
                     <h2>
@@ -66,8 +59,8 @@ const BlogIndex = ({ data, location }) => {
                       itemProp="description"
                     />
                   </section>
-                </div>
-              </article>
+                </Content>
+              </PostListItem>
             </li>
           )
         })}
