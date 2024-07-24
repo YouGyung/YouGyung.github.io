@@ -1,70 +1,25 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import Bio from "../components/bio"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { PostList, PostListItem, Content, Image } from "./index.style"
+import PostPreview from "../components/post/PostPreview"
+import styled from "@emotion/styled"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
   return (
     <Layout location={location} title={siteTitle}>
-      <PostList className="claymorphism">
+      <PostListStyle className="claymorphism">
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
           return (
-            <li key={post.fields.slug}>
-              <PostListItem itemScope itemType="http://schema.org/Article">
-                <Image className="glassmorphism">
-                  <GatsbyImage
-                    image={
-                      post.frontmatter.image.childImageSharp.gatsbyImageData
-                    }
-                    width={404}
-                    height={208}
-                    alt="Profile picture"
-                  />
-                </Image>
-                <Content>
-                  <header>
-                    <small>{post.frontmatter.date}</small>
-                    <h2>
-                      <Link to={post.fields.slug} itemProp="url">
-                        <span itemProp="headline">{title}</span>
-                      </Link>
-                    </h2>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
-                      }}
-                      itemProp="description"
-                    />
-                  </section>
-                </Content>
-              </PostListItem>
+            <li key={post.frontmatter.title}>
+              <PostPreview post={post} />
             </li>
           )
         })}
-      </PostList>
+      </PostListStyle>
     </Layout>
   )
 }
@@ -103,5 +58,15 @@ export const pageQuery = graphql`
         }
       }
     }
+  }
+`
+
+const PostListStyle = styled.ol`
+  padding: var(--spacing-2) var(--layout-width-padding);
+  list-style: none;
+
+  li:last-child > article {
+    border-bottom: 0px solid var(--color-line);
+    padding-bottom: var(--spacing-12);
   }
 `

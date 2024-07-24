@@ -1,14 +1,16 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import Bio from "../components/bio"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
-  return <Layout location={location} title={siteTitle}></Layout>
+  return (
+    <Layout location={location} title={siteTitle}>
+      공사중
+    </Layout>
+  )
 }
 
 export default BlogIndex
@@ -37,6 +39,11 @@ export const pageQuery = graphql`
           date(formatString: "YYYY.MM.DD")
           title
           description
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 400)
+            }
+          }
         }
       }
     }
