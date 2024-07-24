@@ -1,6 +1,7 @@
 ---
 title: PWA & FCM 알람 구현 | 웹서비스 모각GO가 실시간 알람을 구현하기 위한 과정
 date: "2024-07-06T23:46:37.121Z"
+image: "../assets/example.png"
 ---
 
 ### pull, push 둘 다 사용합니다!

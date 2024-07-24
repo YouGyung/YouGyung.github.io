@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -36,9 +36,10 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <div className="post-list-item__image glassmorphism">
-                  <StaticImage
-                    layout="fixed"
-                    src="https://github.com/user-attachments/assets/2a95cdcf-2f98-4d6f-be6c-2e6091de4505"
+                  <GatsbyImage
+                    image={
+                      post.frontmatter.image.childImageSharp.gatsbyImageData
+                    }
                     width={404}
                     height={208}
                     alt="Profile picture"
@@ -94,9 +95,14 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "YYYY.MM.DD")
           title
           description
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 400)
+            }
+          }
         }
       }
     }

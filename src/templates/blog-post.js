@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -34,7 +35,13 @@ const BlogPostTemplate = ({
             </div>
           </div>
         </header>
-
+        <GatsbyImage
+          image={post.frontmatter.image.childImageSharp.gatsbyImageData}
+          width={404}
+          height={208}
+          alt="Profile picture"
+          className="glassmorphism"
+        />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
@@ -94,9 +101,14 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
+        date(formatString: "YYYY.MM.DD")
         title
-        date(formatString: "MMMM DD, YYYY")
         description
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 400)
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

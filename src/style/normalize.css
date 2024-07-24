@@ -159,6 +159,7 @@ section img {
   -webkit-backdrop-filter: blur(0.5px);
   border-radius: 10px;
 }
+
 .post-list-item__image {
   background: rgba(255, 255, 255, 0.25);
 }

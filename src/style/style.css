@@ -88,7 +88,7 @@ body {
 }
 
 footer {
-  transition: all 0.5s ease-out;
+  transition: all 0.1s ease-out;
   padding: var(--spacing-8) var(--layout-width-padding);
   margin-top: var(--spacing-24);
   font-size: var(--fontSize-1);
@@ -268,7 +268,7 @@ a:focus {
   box-shadow: 0px 2px 4px 2px rgba(223, 238, 250, 0.25);
   z-index: 10;
   background: white;
-  transition: all 0.5s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .global-header div {
@@ -384,6 +384,7 @@ a:focus {
   .post-list-item__image {
     display: none;
   }
+
   .main-heading {
     font-size: var(--fontSize-4);
   }
