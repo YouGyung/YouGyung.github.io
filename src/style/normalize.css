@@ -3,6 +3,9 @@
 /* Document
    ========================================================================== */
 
+/* CSS Custom Properties Definitions */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.

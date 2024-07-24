@@ -4,6 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { PostList } from "./index.style"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -24,7 +25,10 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <ol style={{ listStyle: `none` }} className="claymorphism post-list">
+      <PostList
+        style={{ listStyle: `none` }}
+        className="claymorphism post-list"
+      >
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -67,7 +71,7 @@ const BlogIndex = ({ data, location }) => {
             </li>
           )
         })}
-      </ol>
+      </PostList>
     </Layout>
   )
 }
