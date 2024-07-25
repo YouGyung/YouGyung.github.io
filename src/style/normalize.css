@@ -152,8 +152,6 @@ sup {
 
 section img {
   border-style: none;
-  width: 90%;
-  margin: 0 5%;
 
   /* glassmorphism */
   background: rgba(222, 238, 255, 0.15);
@@ -163,9 +161,6 @@ section img {
   border-radius: 10px;
 }
 
-.post-list-item__image {
-  background: rgba(255, 255, 255, 0.25);
-}
 /* Forms
    ========================================================================== */
 

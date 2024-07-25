@@ -74,11 +74,23 @@ const PreviewTextStyle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 `
 
 const PreviewImageStyle = styled.div`
   min-width: var(--image-width);
-  height: var(--image-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: var(--spacing-8);
   overflow: hidden;
   @media (max-width: 60rem) {
