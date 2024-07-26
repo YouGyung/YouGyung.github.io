@@ -32,6 +32,8 @@
     "sass": "^1.77.8"
   },
   "devDependencies": {
+    "gatsby-post-gen": "^1.0.0",
+    "gh-pages": "^6.1.1",
     "prettier": "^2.8.8"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -50,6 +52,9 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "create": "gatsby-post-gen",
+    "deploy": "gatsby build && gh-pages -d public -b master -r 'git@github.com:yougyung/yougyung.github.io.git'",
+
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
