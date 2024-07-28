@@ -18,8 +18,8 @@ function Post({ post }: any) {
       <CenterStyle>
         <GatsbyImage
           image={image.childImageSharp.gatsbyImageData}
-          alt="Profile picture"
-          className="glassmorphism"
+          alt="article picture"
+          className="article_picture glassmorphism"
         />
       </CenterStyle>
       <section
@@ -41,8 +41,15 @@ export const PostStyle = styled.article`
   overflow: hidden;
   margin: 0 auto;
   font-size: var(--fontSize-2);
-  img {
-    max-width: var(--post-width);
+  .article_picture {
+    width: calc(100vw - 2 * var(--layout-width-padding));
+  }
+  section img {
+    width: calc(var(--post-width) - 2 * var(--layout-width-padding));
+    max-width: calc(100vw - 2 * var(--layout-width-padding));
+  }
+  pre {
+    font-size: small;
   }
 `
 

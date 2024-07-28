@@ -11,12 +11,7 @@ function ShareURLButton() {
 
   return (
     <IconStyle onClick={handleClickIcon}>
-      <StaticImage
-        src="../../assets/clip.svg"
-        width={24}
-        height={24}
-        alt={"URL Ctrl+C Icon"}
-      />
+      <StaticImage src="../../assets/clip.svg" alt={"URL Ctrl+C Icon"} />
       <span>URL Ctrl+C</span>
     </IconStyle>
   )
@@ -59,5 +54,11 @@ export const IconStyle = styled.div`
   &:hover img {
     background-color: var(--color-line);
     border-radius: var(--spacing-1);
+  }
+
+  @media (max-width: 30rem) {
+    img {
+      height: 32px;
+    }
   }
 `
