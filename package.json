@@ -53,8 +53,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "create": "gatsby-post-gen",
-    "deploy": "gatsby build && gh-pages -d public -b master -r 'git@github.com:yougyung/yougyung.github.io.git'",
-
+    "deploy":"gatsby build && gh-pages -d public -b main",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
