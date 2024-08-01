@@ -37,6 +37,7 @@ import styled from "@emotion/styled"
 
 export const PostStyle = styled.article`
   max-width: var(--post-width);
+  margin: var(--spacing-10) auto;
   padding: 0 var(--layout-width-padding);
   overflow: hidden;
   margin: 0 auto;
@@ -44,6 +45,7 @@ export const PostStyle = styled.article`
   .article_picture {
     width: calc(100vw - 2 * var(--layout-width-padding));
   }
+
   section img {
     width: calc(var(--post-width) - 2 * var(--layout-width-padding));
     max-width: calc(100vw - 2 * var(--layout-width-padding));
