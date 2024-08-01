@@ -1,12 +1,134 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[yougyung의 tech blog]]></description><link>https://yougyung.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 01 Aug 2024 07:52:35 GMT</lastBuildDate><item><title><![CDATA[tailwind theme 동적 할당을 통한 커스텀 애니메이션 구현하기]]></title><description><![CDATA[졸업을 부탁해 
-간편 졸업요건검사 서비스
-졸업을 부탁해는 졸업을 위해 반드시 필요한 수강과목과 졸업요건 정보가 파편화되어져 있고 자주 변경되어 학우들이 어려움을 겪는다는 문제점에서 시작된 프로젝트로, MyiWeb MSI…]]></description><link>https://yougyung.github.io/hello-world/</link><guid isPermaLink="false">https://yougyung.github.io/hello-world/</guid><pubDate>Sun, 28 Jul 2024 22:12:03 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[yougyung의 tech blog]]></description><link>https://yougyung.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 01 Aug 2024 09:57:20 GMT</lastBuildDate><item><title><![CDATA[tailwind theme 동적 할당을 통한 커스텀 애니메이션 구현하기]]></title><description><![CDATA[졸업을 부탁해 
+간편 졸업요건검사 서비스 졸업을 부탁해는 졸업을 위해 반드시 필요한 수강과목과 졸업요건 정보가 파편화되어져 있고 자주 변경되어 학우들이 어려움을 겪는다는 문제점에서 시작된 프로젝트로, MyiWeb MSI…]]></description><link>https://yougyung.github.io/hello-world/</link><guid isPermaLink="false">https://yougyung.github.io/hello-world/</guid><pubDate>Sun, 28 Jul 2024 22:12:03 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;졸업을 부탁해 &lt;br/&gt;
-간편 졸업요건검사 서비스&lt;br/&gt;
-졸업을 부탁해는 졸업을 위해 반드시 필요한 수강과목과 졸업요건 정보가 파편화되어져 있고 자주 변경되어 학우들이 어려움을 겪는다는 문제점에서 시작된 프로젝트로, MyiWeb MSI의 성적표만으로 졸업을 위해 필요한 미이수 과목 정보 및 잔여학점 조회, 카테고리별 수강학점현황, 강의 커스텀을 통한 졸업사정예측 서비스를 원클릭으로 제공합니다.
-&lt;br/&gt; &lt;a href=&quot;https://github.com/Open-Eye-Im-Developer/MoGakGo-FE&quot;&gt;레포 이동하기&lt;/a&gt;&lt;/p&gt;
+간편 졸업요건검사 서비스&lt;br/&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;https://github.com/user-attachments/assets/289b5960-b164-4181-904d-d18f70bd26ff&quot; alt=&quot;화면 기록 2024-07-28 오후 3 15 40&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PWA & FCM 알람 구현 | 웹서비스 모각GO가 실시간 알람을 구현하기 위한 과정]]></title><description><![CDATA[pull, push 둘 다 사용합니다! 모각GO 
+&lt;details&gt;
+&lt;summary&gt;졸업을 부탁해 더 알아보기&lt;/summary&gt;
+&lt;blockquote&gt;
+&lt;p&gt;졸업을 부탁해는 졸업을 위해 반드시 필요한 수강과목과 졸업요건 정보가 파편화되어져 있고 자주 변경되어 학우들이 어려움을 겪는다는 문제점에서 시작된 프로젝트로, MyiWeb MSI의 성적표만으로 졸업을 위해 필요한 미이수 과목 정보 및 잔여학점 조회, 카테고리별 수강학점현황, 강의 커스텀을 통한 졸업사정예측 서비스를 원클릭으로 제공합니다.
+&lt;br/&gt; &lt;a href=&quot;https://github.com/Open-Eye-Im-Developer/MoGakGo-FE&quot;&gt;레포 이동하기&lt;/a&gt; &lt;br/&gt; &lt;a href=&quot;https://mju-graduate.com&quot;&gt;서비스 이동하기&lt;/a&gt; &lt;br/&gt; &lt;a href=&quot;https://github.com/Myongji-Graduate/myongji-graduate-next/pull/59/files&quot;&gt;PR 이동하기&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2&gt;졸부의 커스텀 애니메이션&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/user-attachments/assets/289b5960-b164-4181-904d-d18f70bd26ff&quot; alt=&quot;화면 기록 2024-07-28 오후 3 15 40&quot;&gt;&lt;/p&gt;
+&lt;p&gt;졸업을 부탁해는 성적표를 입력하는 경우, 졸업요건의 충족을 위해 카테고리 별로 수강 정보 및 이수 현황을 제공하고 있습니다! &lt;br/&gt;
+그 과정에서 시각화도구로 chart를 이용하였으며, 이수 현황 비율에 맞춰 chart animation을 custom하여 제공하고 있습니다.&lt;/p&gt;
+&lt;h2&gt;요구사항&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;percentage 변수에 맞춰 동적으로 chart게이지를 노출할 수 있어야한다.&lt;/li&gt;
+&lt;li&gt;졸부팀이 사용하는 css framework(tailwind)로 구현해야한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;구현&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;만일 저희 팀이 CSS-in-JS를 사용하는 경우였다면, props를 통해 percentage변수를 전달하여 동적 애니메이션을 노출했을 것으로 예상됩니다. &lt;br/&gt;
+하지만.. 우리팀은 tailwind를 쓰니까!!!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;percentage css 변수 생성&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@property&lt;/span&gt; --percentage&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;syntax&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;number&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;inherits&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; true&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;initial-value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;css animation 구현&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@keyframes&lt;/span&gt; piechart&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token selector&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0.8&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;--percentage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;.piechart::before&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; piechart 1s forwards&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; absolute&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 50%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;inset&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;farthest-side&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; #7590ff 98%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; #0000&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; top/1.1rem 1.5rem
+      no-repeat&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;conic-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#7590ff &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;—percentage&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; * 1%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; #0000 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;.piechart:after&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; piechart 1s forwards&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 46%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;inset&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;50% - 0.74rem&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; absolute&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #7590ff&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;—percentage&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; * 3.6deg&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;translateY&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;50% - 9rem / 2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;piechart component에서 --percentage 변수에 동적으로 값을 할당 &amp;#x26; class 추가&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;typescript&quot;&gt;&lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;
+&lt;span class=&quot;token string&quot;&gt;&apos;use client&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;PieChartProp&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  percentage&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;PieChart&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; percentage &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; PieChartProp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; filterdPercentage &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; percentage &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; percentage&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div
+      className&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;piechart ...&apos;&lt;/span&gt;
+      style&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string-property property&quot;&gt;&apos;--percentage&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; percentage
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;filterdPercentage&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; PieChart&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;--percectage 커스텀 변수를 할당하면 build시에
+&lt;code class=&quot;language-text&quot;&gt;Object literal may only specify known properties, and &apos;&apos;--percentage&apos;&apos; does not exist in type &apos;Properties&amp;lt;string | number, string &amp;amp; {}&gt;&apos;.&lt;/code&gt;
+해당 타입오류가 발생할겁니당 &lt;br/&gt;
+TypeScript에서 예상하는 속성타입에는 없는 &lt;code class=&quot;language-text&quot;&gt;--percentage&lt;/code&gt; 속성이 존재하기때문에 발생하는 이슈로
+이를 해결하기 위해 react가 권장하는 &lt;a href=&quot;https://github.com/frenic/csstype#what-should-i-do-when-i-get-type-errors&quot;&gt;모듈 확장&lt;/a&gt;을 통해 확장을 진행했습니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ts&quot;&gt;&lt;pre class=&quot;language-ts&quot;&gt;&lt;code class=&quot;language-ts&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//css.d.ts&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;csstype&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;declare&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;csstype&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Properties&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//Add CSS Custom Properties&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;--percentage&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;number&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;경험한 문제&lt;/h2&gt;
+&lt;h3&gt;커스텀 애니메이션이 적용되지않아 (.இ﹏இ`｡)&lt;/h3&gt;
+&lt;p&gt;pie-chart의 애니메이션은 커스텀 변수(--percentage)가 0부터 할당해준 값까지 상승하며 차트가 그려지는 구조입니다.&lt;br/&gt;
+하지만 0%와 100%의 경우에만 애니메이션으로 변화가 적용되는 문제!!를 경험했습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ts&quot;&gt;&lt;pre class=&quot;language-ts&quot;&gt;&lt;code class=&quot;language-ts&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//tailwind.config.ts&lt;/span&gt;
+theme &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    extend &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       animation &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            piechart &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token string-property property&quot;&gt;&apos;0%&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  &lt;span class=&quot;token string-property property&quot;&gt;&apos;--percentage&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 코드는 처음 애니메이션을 적용한 코드입니다.&lt;br/&gt; 졸부팀은 tailwind를 사용하기때문에 tailwind.config.ts에
+커스텀 변수가 애니메이션을 적용시켰습니다. &lt;br/&gt; --percentage는 number type으로 0을 할당해줘야하는데, tailwind.config.ts에는 string type으로만 type지정이 가능하므로 커스텀 변수의 값을 ‘0’으로 지정한 것이 원인이었습니다. &lt;br/&gt;
+해당 문제를 확인하고, 위의 코드와 같이 piechart에 사용되는 css는 별도로 분리해서 pie-chart.css file을 통해 관리하고 있습니다!!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PWA & FCM 알람 구현 | 웹서비스 모각GO가 실시간 알람을 구현하기 위한 과정]]></title><description><![CDATA[pull, push 둘 다 사용합니다! 모각GO 
 일회성 만남과 지역 기반 매칭을 통해 기존 불편 요소를 해결하고, 게임적 경험을 제공하는 1:1 모각코 매칭 서비스
  레포 이동하기 327285487-b2bf40fd-9809-46a9-80e3-7e…]]></description><link>https://yougyung.github.io/PWA &amp; FCM 알람 구현 | 웹서비스 모각GO가 실시간 알람을 구현하기 위한 과정/</link><guid isPermaLink="false">https://yougyung.github.io/PWA &amp; FCM 알람 구현 | 웹서비스 모각GO가 실시간 알람을 구현하기 위한 과정/</guid><pubDate>Sat, 06 Jul 2024 23:46:37 GMT</pubDate><content:encoded>&lt;br/&gt;
 &lt;br/&gt;
